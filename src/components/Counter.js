@@ -6,8 +6,8 @@ import classes from "./Counter.module.css";
 const Counter = () => {
   const dispatch = useDispatch();
   const [counter, show] = useSelector((state) => [
-    state.counter,
-    state.showCounter,
+    state.counter.counter,
+    state.counter.showCounter,
   ]);
 
   const incClickHandler = () => {
